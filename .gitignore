@@ -1,5 +1,7 @@
 venv/
-*.pyc
 __pycache__/
+*.pyc
+*.log
 db.sqlite3
 .DS_Store
+tasks/static/*.css.map
