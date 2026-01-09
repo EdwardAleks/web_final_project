@@ -1,0 +1,127 @@
+body {
+  background-color: #f4f7f6;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .task-input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.container .task-input-section input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+.container .task-input-section input:focus {
+  border-color: #4a90e2;
+}
+.container .task-input-section .row {
+  display: flex;
+  gap: 10px;
+}
+.container .task-input-section button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.container .task-input-section button:hover {
+  background-color: rgb(34.3857142857, 117.3857142857, 214.6142857143);
+}
+.container .filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.container .filters button {
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.container .filters button:hover {
+  background: #eee;
+}
+.container .filters button:focus {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+.container ul li {
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+.container ul li .actions button {
+  margin-left: 5px;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+.container ul li .actions button.btn-check {
+  background-color: #2ecc71;
+}
+.container ul li .actions button.btn-check:hover {
+  background-color: rgb(36.616, 162.384, 89.948);
+}
+.container ul li .actions button.btn-del {
+  background-color: #e74c3c;
+}
+.container ul li .actions button.btn-del:hover {
+  background-color: rgb(213.698630137, 43.8356164384, 26.301369863);
+}
+.container ul li.completed {
+  background-color: #fff;
+}
+.container ul li.completed span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+.container ul li.completed .actions button.btn-check {
+  background-color: #bdc3c7;
+}
+.container ul li.completed .actions button.btn-check:hover {
+  background-color: rgb(161.4098360656, 169.9180327869, 175.5901639344);
+}
+
+/*# sourceMappingURL=style.css.map */

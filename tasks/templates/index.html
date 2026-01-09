@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Task Manager</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>My Tasks</h1>
+    </header>
+
+    <div class="task-input-section">
+        <input type="text" id="taskTitle" placeholder="Task description...">
+        <div class="row">
+            <input type="date" id="taskDate">
+            <input type="time" id="taskTime">
+        </div>
+        <button onclick="createTask()">Add Task</button>
+    </div>
+
+    <div class="filters">
+        <button onclick="filterTasks('all')" class="active">All</button>
+        <button onclick="filterTasks('todo')">To Do</button>
+        <button onclick="filterTasks('done')">Done</button>
+    </div>
+
+    <ul id="taskList">
+        </ul>
+</div>
+
+<script src="{% static 'app.js' %}"></script>
+</body>
+</html>
